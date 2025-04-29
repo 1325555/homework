@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 笑話產生器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>    <div class="container">
+        <h1>🎭 AI 笑話聊天室 🎭</h1>
+        <div class="api-key-section">
+            <label for="apiKey">API 金鑰：</label>
+            <input type="password" id="apiKey" required placeholder="請輸入您的 Google AI API 金鑰" value="AIzaSyAwHFxJOgXG87WdMzKNL-kptmXTxnaJ570">
+            <small>您的 API 金鑰僅儲存在瀏覽器中，不會傳送到其他地方</small>
+        </div>
+        <div class="chat-container" id="chatContainer">
+            <div class="message bot">
+                👋 你好！我是笑話機器人。告訴我你想聽什麼類型的笑話，我會為你準備一個有趣的故事！
+            </div>
+        </div>
+        <div class="input-section">
+            <input type="text" id="jokeType" required placeholder="輸入想聽的笑話類型..." value="隨機笑話">
+            <button id="generateButton">發送</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
